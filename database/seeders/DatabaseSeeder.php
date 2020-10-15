@@ -2,8 +2,6 @@
 
 namespace Database\Seeders;
 
-use Database\Factories\PostFactory;
-use Database\Factories\TagFactory;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -15,6 +13,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UserTableSeeder::class);
+        $this->call(UserTableSeeder::class);
+        $this->call(RegressionSeeder::class);
     }
 }
